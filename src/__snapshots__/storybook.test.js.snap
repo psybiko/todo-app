@@ -555,6 +555,46 @@ exports[`Storyshots TaskList With Pinned Tasks 1`] = `
     className="list-items"
   >
     <div
+      className="list-item TASK_PINNED"
+    >
+      <label
+        className="checkbox"
+      >
+        <input
+          defaultChecked={false}
+          disabled={true}
+          name="checked"
+          type="checkbox"
+        />
+        <span
+          className="checkbox-custom"
+          onClick={[Function]}
+        />
+      </label>
+      <div
+        className="title"
+      >
+        <input
+          placeholder="Input title"
+          readOnly={true}
+          type="text"
+          value="Task 6 (pinned)"
+        />
+      </div>
+      <div
+        className="actions"
+        onClick={[Function]}
+      >
+        <a
+          onClick={[Function]}
+        >
+          <span
+            className="icon-star"
+          />
+        </a>
+      </div>
+    </div>
+    <div
       className="list-item TASK_INBOX"
     >
       <label
@@ -739,46 +779,6 @@ exports[`Storyshots TaskList With Pinned Tasks 1`] = `
           readOnly={true}
           type="text"
           value="Task 5"
-        />
-      </div>
-      <div
-        className="actions"
-        onClick={[Function]}
-      >
-        <a
-          onClick={[Function]}
-        >
-          <span
-            className="icon-star"
-          />
-        </a>
-      </div>
-    </div>
-    <div
-      className="list-item TASK_PINNED"
-    >
-      <label
-        className="checkbox"
-      >
-        <input
-          defaultChecked={false}
-          disabled={true}
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          className="checkbox-custom"
-          onClick={[Function]}
-        />
-      </label>
-      <div
-        className="title"
-      >
-        <input
-          placeholder="Input title"
-          readOnly={true}
-          type="text"
-          value="Task 6 (pinned)"
         />
       </div>
       <div
