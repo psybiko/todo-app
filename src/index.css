@@ -484,12 +484,6 @@
  .icon-bookmark-hollow:before {
    content: "\e607";
  }
- .icon-star:before {
-   content: "\e608";
- }
- .icon-star-hollow:before {
-   content: "\e609";
- }
  .icon-circle:before {
    content: "\e60a";
  }
@@ -505,9 +499,7 @@
  .icon-face-happy:before {
    content: "\e60e";
  }
- .icon-face-sad:before {
-   content: "\e60f";
- }
+
  .icon-face-neutral:before {
    content: "\e610";
  }
@@ -738,9 +730,6 @@
  }
  .icon-button:before {
    content: "\e65d";
- }
- .icon-check:before {
-   content: "\e65e";
  }
  .icon-form:before {
    content: "\e65f";

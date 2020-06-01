@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 import Task from './Task';
 import { connect } from 'react-redux';
 import { archiveTask, pinTask } from '../lib/redux';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export function PureTaskList({ loading, tasks, onPinTask, onArchiveTask }) {
   const events = {
@@ -35,10 +36,12 @@ export function PureTaskList({ loading, tasks, onPinTask, onArchiveTask }) {
     </div>
   }
 
+  const element = <FontAwesomeIcon icon={ faCheck } />
+
   if (tasks.length === 0) {
     return <div className="list-items">
       <div className="wrapper-message">
-        <span className="icon-check" />
+  <span className="icon-check">{element}</span>
         <div className="title-message">You have no tasks</div>
         <div className="subtitle-message">Sit back and relax</div>
       </div>

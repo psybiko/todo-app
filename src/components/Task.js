@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
+  const element = <FontAwesomeIcon icon={faStar}/>
   return (
     <div className={`list-item ${state}`}>
       <label className="checkbox">
@@ -20,7 +23,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
       <div className="actions" onClick={event => event.stopPropagation()}>
         {state !== 'TASK_ARCHIVED' && (
           <a onClick={() => onPinTask(id)}>
-            <span className={`icon-star`}/>
+            <span className="icon-star">{element}</span>
           </a>
         )}
       </div>
